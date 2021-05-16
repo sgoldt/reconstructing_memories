@@ -48,7 +48,7 @@ nose2
 | ```hopfield.py```       | Helper functions to create and analyse Hopfield networks |
 | ```priors.py```           | Implementation of the various papers analysed in the paper |
 | ```se_*.py```              | State evolution for the AMP algorithms |
-| ```test_*.py```             | Unit tests for the various modules |
+| ```tests```             | Contains unit tests for the various modules |
 
 # References and acknowledgements
 
