@@ -18,7 +18,7 @@ import numpy.random as rnd
 
 from scipy import integrate
 
-from matfact import amp  # for some constants, e.g. for initialisation
+import amp  # for some constants, e.g. for initialisation
 import hopfield as hf
 
 # maximum simulation time
@@ -184,9 +184,10 @@ if __name__ == "__main__":
 
     prior_name = hf.prior_name(args.prior, args.rho)
 
-    fname = ("se_%s_P1_rho%g_i%d.dat" %
+    rho_desc = ("rho%g_" % args.rho) if args.rho is not None else ""
+    fname = ("se_%s_P1_%si%d.dat" %
              (hf.prior_name(args.prior, args.rho, True),
-              args.rho, args.init))
+              rho_desc, args.init))
     logfile = open(fname, "w")
     sys.stdout = logfile
 
