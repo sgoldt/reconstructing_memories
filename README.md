@@ -38,6 +38,18 @@ simply type
 nose2
 ```
 
+## Detailed guide to the files
+
+| File                          | Description                                                                                                                                                    |
+|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ```amp.py``` | Generic implementation of approximate message passing (AMP) <br/> for low-rank matrix factorisation                               |
+| ```amp_hf*.py```                | Launches AMP for various hopfield models |
+| ```cpriors.pyx```         | Cython implementation of various computationally intensive prior functions             |
+| ```hopfield.py```       | Helper functions to create and analyse Hopfield networks |
+| ```priors.py```           | Implementation of the various papers analysed in the paper |
+| ```se_*.py```              | State evolution for the AMP algorithms |
+| ```test_*.py```             | Unit tests for the various modules |
+
 # References and acknowledgements
 
 ## Approximate Message passing
