@@ -1,7 +1,7 @@
 # Reconstructing memories
 
 Code for the paper "Bayesian reconstruction of memories stored in neural
-  networks from their connectivity".
+  networks from their connectivity" ([arXiv:2105.07416](https://arxiv.org/abs/2105.07416))
 
 ## Requirements
 
